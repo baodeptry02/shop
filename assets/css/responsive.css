@@ -51,7 +51,9 @@
     display: none;
   }
   body {
-    min-width: fit-content;
+    min-width: fit-content; /* body ko kéo dài hết chiều dài của nó nên dùng cái này để fix */
+    block-size: fit-content;
+    width: -moz-fit-content;
   }
   .header-with-search {
     justify-content: space-between;
@@ -86,6 +88,23 @@
   .header__cart-list {
     width: 554px;
   }
+  .app__content {
+    margin: 0 4px;
+  }
+
+  .pagination-item {
+    margin: 0;
+  }
+
+  .pagination-item__link {
+    --height: 28px;
+    font-size: 1.6rem;
+    min-width: 36px;
+  }
+  .header__logo-img {
+    width: 110px;
+  }
+
   @keyframes SlideOnTop {
     from {
       top: calc(var(--header-height) / 2);
