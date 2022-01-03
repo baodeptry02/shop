@@ -1,3 +1,7 @@
+.app {
+  overflow: hidden;
+}
+
 /* header */
 .header {
   height: var(--header-height);
@@ -41,6 +45,7 @@
 .header__navbar-list {
   padding-left: 0; /* do li mặc định có padding left 40px */
   margin: 10px 0 0 0; /* và có margin */
+  display: flex;
 }
 .header__navbar-item {
   min-height: 2.4rem;
@@ -353,8 +358,9 @@
 .has-cart__list {
   padding-left: 0;
   list-style: none;
-  max-height: 56vh; /* view port: tỉ lệ trình duyệt */
+  max-height: 46vh; /* view port: tỉ lệ trình duyệt */
   overflow-y: auto;
+  border-top: 1px solid #e5e5e5;
 }
 .has-cart__item {
   align-items: center;
@@ -466,7 +472,7 @@
 .header__search-select-icon {
   color: #868686;
   font-size: 1.2rem;
-  margin: 0 16px 0 8px;
+  margin: 0 8px 0 8px;
 }
 .header__search-btn {
   color: var(--white-color);
