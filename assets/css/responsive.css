@@ -101,19 +101,19 @@
     margin-top: 0px;
   }
   .pagination-item {
-    margin: 0;
+    margin: 0 2px 0;
   }
 
   .pagination-item__link {
     --height: 28px;
     font-size: 1.6rem;
-    min-width: 32px;
+    min-width: 36px;
   }
   .header__logo-img {
     width: 110px;
   }
   .header__search-btn {
-    width: 34px;
+    width: 48px;
   }
   @keyframes SlideOnTop {
     from {
@@ -124,5 +124,15 @@
       top: var(--header-height);
       opacity: 1;
     }
+  }
+}
+
+/* Mobile nhưng là màn ip6 trở xuống  🙂*/
+@media (max-width: 361px) {
+  .pagination-item__link {
+    min-width: 32px;
+  }
+  .pagination-item {
+    margin: 0;
   }
 }
