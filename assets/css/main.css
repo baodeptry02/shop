@@ -296,11 +296,11 @@
   display: none;
 }
 /* no cart */
-.header__cart-no-cart-img {
+.header__cart--no-cart-img {
   width: 30%;
   display: none;
 }
-.header__cart-no-cart-msg {
+.header__cart-list--no-cart-msg {
   margin-top: 20px;
   font-size: 1.4rem;
   display: none;
@@ -472,7 +472,7 @@
 .header__search-select-icon {
   color: #868686;
   font-size: 1.2rem;
-  margin: 0 8px 0 8px;
+  margin: 0 14px 0 12px;
 }
 .header__search-btn {
   color: var(--white-color);
